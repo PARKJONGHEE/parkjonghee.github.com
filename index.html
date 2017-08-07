@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
 
     <!--[if lt IE 9]>
         <script src="js/html5shiv.js"></script>
@@ -22,97 +22,12 @@
 
 <body>
     <!-- Naviagation Bar Section -->
-    <header id="header" style="display:block;">
-      <div class="header_container">
-        <div class="header_left">
-          <a class="page-scroll" href="#home"><span>JongHee's Page</span></a>
-        </div>
-        <div class="header_right">
-            <a class="page-scroll" href="#about">About</a>
-            <a class="page-scroll" href="#profile">Profile</a>
-            <a class="page-scroll" href="#projects">Projects</a>
-            <a class="page-scroll" href="#contact">Contact</a>
-        </div>
-      </div>
-    </header>
+<section id="main">
+  <h2>안녕하세요. 개발자 박종희입니다.</h2>
+</section>
+<section id="home">
 
-    <section id="home">
-        <div class="container">
-            <div class="containerText">
-              <h2>JongHee's Page</h2>
-              <h3>Jsp Web Developer</h3>
-            </div>
-        </div>
-    </section>
-    <section id="about">
-    </section>
-
-    <!-- contents Section -->
-    <section id="profile">
-        <div class="container">
-            <div id='main_banner_section'>
-                   <div id='responsiveLayout' class='row row-eq-height'>
-                       <div class="col-md-3">
-                    <!-- aside -->
-                    <aside>
-
-                        <!-- accordion section -->
-                        <a href="insa.html">
-                           <ul class="techSub">代表前言</ul>
-                        </a>
-
-                        <a href="company.html">
-                           <ul class="techSub">公司沿革</ul>
-                        </a>
-
-                        <a href="customer.html">
-                           <ul class="techSub">主要客户</ul>
-                        </a>
-                        <a href="map.html">
-                           <ul class="techSub">事业场介绍</ul>
-                        </a>
-                        <a href="news.html">
-                           <ul class="techSub">三和消息</ul>
-                        </a>
-                    </aside>
-                </div>
-                      <div class="col-md-10 col-sm-12">
-                       <div id='com_intro_outline'>
-                           <div id='com_intro_main_head'>公司沿革</div>
-                           <div id='com_main_one'>
-                               <div>
-                                   <span>21 세기를 앞서가는 제품</span><br />으로 여러분께 다가갑니다.
-                               </div>
-                               <div></div>
-                               <div>
-                               我们三和机械把工作上效率以及产品的<br />
-                               安全性放在重点一直经菖生产不织布方面<br />
-                               本公司将保为满足客户的要求以先进掕提供优质的服务
-                               </div>
-                           </div>
-                           <div id='com_main_two'>
-                               <div>
-                                   <div>SAMHWA MACHINERY CO.</div>
-                                   <div></div>
-                                   <div>
-                                       <span>Address </span> 慶尙北道 慶山市 南山面 下大里 312-2 番地
-                                   </div>
-                                   <div>
-                                       <span>Tel </span> +82-53-853-1331, 1338
-                                   </div>
-                                   <div>
-                                       <span>Fax </span> +82-53-853-1966
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                       </div>
-                   </div>
-            </div>
-        </div>
-        <!-- .container -->
-    </section>
-
+</section>
 
     <!-- Footer Section -->
     <footer id="cfooter"></footer>
@@ -124,7 +39,18 @@
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
     <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script>
+    <script src="js/common.js"></script> -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    $('h2').click(function(){
+       $('#home').show(600);
+       $('#main').hide(200);
+    });
+    setInterval(function(){
+    $("h2").toggle();
+  }, 2000);
+    </script>
 
 </body>
 
